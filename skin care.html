@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinGlow - Complete Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    nav {
+      background-color: #fff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff69b4;
+    }
+    section {
+      padding: 40px;
+    }
+    #home { background-color: peachpuff; }
+    #services { background-color: pink; }
+    #about { background-color: hotpink; }
+    #contact { background-color: powderblue; }
+    .hero {
+      background-image: url("/64d68d91d003018c016b88dc3c964aeb.jpg");
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      border-radius: 10px;
+      text-shadow: 2px 2px 4px #000;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4b4bb4;
+      color: white;
+      cursor: pointer;
+    }
+    .thanks {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="home">
+    <div class="hero">Welcome to SkinGlow – Your Skin Deserves the Best!</div>
+    <h2>Welcome to Our Natural Skin Care World</h2>
+    <p>
+      At SkinGlow, we believe that beauty starts with healthy, glowing skin. Our mission is to provide you with natural and effective skincare solutions. Whether you're looking for a soothing facial, acne treatment, or just a refreshing glow, we're here to help.
+    </p>
+  </section>  <section id="services">
+    <h2>Our Skin Care Services</h2>
+    <ul>
+      <li>Facials and Deep Cleansing</li>
+      <li>Acne Treatment Programs</li>
+      <li>Anti-Aging & Skin Rejuvenation</li>
+      <li>Natural Glow Therapy Packages</li>
+    </ul>
+   
+    <img src ="/3b0d95c68f36a240ac964126e42bb82c.jpg" alt="Skincare Services" style="width:100%; border-radius:10px;">
+     <img src ="/b06a02c19b19fff65342f865bf92e495 (1).jpg" alt="Skincare Services" style="width:100%; border-radius:10px;">
+  </section>  <section id="about">
+    <h2>About SkinGlow</h2>
+    <p>
+      SkinGlow was founded with the goal of helping people achieve naturally glowing, healthy skin. We use safe and natural ingredients, and our staff is professionally trained in advanced skin care techniques.
+    </p>
+    <p>
+      Our vision is to empower every client to feel confident and radiant in their skin. Thank you for trusting us on your skin journey.
+    </p>
+    <img src="/e4e4449dc6e43c856150e8ec7e4037f7.jpg" alt="Our Team" style="width:100%; border-radius:10px;">
+  </section>  <section id="contact">
+    <h2>Contact Us / Book Now</h2>
+    <form id="bookingForm">
+      <label>Email:</label>
+      <input type="email" required />
+      <label>Phone Number:</label>
+      <input type="tel" required />
+      <label>Gender:</label>
+      <select required>
+        <option value="">--Select--</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+      <label>Your Request / Service:</label>
+      <textarea rows="4" required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+    <div class="thanks" id="thankYouMsg">
+      Mahadsanid! Dalabkaaga waa nala soo gaadhay. Waan kula soo xiriiri doonaa insha Allah.
+    </div>
+  </section>  <script>
+    const form = document.getElementById('bookingForm');
+    const thankYouMsg = document.getElementById('thankYouMsg');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      form.style.display = 'none';
+      thankYouMsg.style.display = 'block';
+    });
+  </script></body>
+</html>
